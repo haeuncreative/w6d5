@@ -1,0 +1,11 @@
+<h2>Cats Index</h2>
+
+<% @cats.each do |cat| %>
+    <br>
+    <label for="name">Name: </label><%= cat.name %> <br>
+    <label for="birth_date">Birth Date: </label><%= cat.birth_date %> <br> 
+    <label for="color">Color: </label><%= cat.color %> <br>
+    <label for="sex">Sex: </label><%= cat.sex %> <br>
+    <br>
+    <hr>
+<% end %>

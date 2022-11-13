@@ -1,0 +1,31 @@
+<h2>Cat Show</h2>
+
+
+    <style>
+    
+    /* table {
+        border: .5px solid black;
+    } */
+
+    th, td {
+        border: .5px solid black;
+        padding: 8px 10px;
+    }
+    </style>
+    
+    <table>
+    <tr>
+        <th scope="col">NAME</th>
+        <th scope="col">BIRTH DATE</th>
+        <th scope="col">SEX</th>
+        <th scope="col">COLOR</th>
+    </tr>
+    <tr>
+        <th scope="row"><%= @cat.name %></td>
+        <td align="center"><%= @cat.birth_date %></td>
+        <td align="center"><%= @cat.sex %></td>
+        <td align="center"><%= @cat.color %></td>
+    </tr>
+
+    
+    </table>
