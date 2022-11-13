@@ -33,8 +33,8 @@ class CatsController < ApplicationController
 
     def update
         @cat = Cat.find_by(id: params[:id])
-        if cat.update(cat_params)
-            render json: @cat
+        if @cat.update(cat_params)
+            render :show
         else
             render json: @cat.errors.full_messages, status: 422
         end

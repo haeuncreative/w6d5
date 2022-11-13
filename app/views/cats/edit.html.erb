@@ -1,7 +1,5 @@
 <h2>Edit Cat Form</h2>
 
-form
-
 <form action="<%= cats_url %>" method="POST">
 <input type="hidden" name = "_method" value="patch">
     <label>Kitty Name:
@@ -11,12 +9,11 @@ form
     <label for="birth_date">Birth Date:</label>
     <input type="date" name="birth_date" id="birth_date" value="<%= @cat.birth_date %>"><br>
     <label for="sex">Sex:
-    Male<input type="radio" id="sex" name="cat[sex]" value="<%= 'M' %>"/>
-    Female<input type="radio" id="sex" name="cat[sex]" value="<%= 'F' %>"/></label><br/>
+    Male<input type="radio" id="sex" name="cat[sex]" value="<%= 'M' %>" checked/>
+    Female<input type="radio" id="sex" name="cat[sex]" value="<%= 'F' %>" checked/></label><br/>
 
     <label for="color"> What color is this kitty? 
-    <select name="color" id="color" value="<%= @cat.color %>"> 
-        <option value="none" selected disabled hidden>Kitty's Color</option>
+    <select name="color" id="color" value="<%= @cat.color %>" checked> 
         <option value="calico">Calico</option>
         <option value="russian_blue">Russian Blue</option>
         <option value="tabby">Tabby</option>
@@ -29,5 +26,5 @@ form
     </select></label><br>
     <label for="description">Description:</label>
     <input type="textarea" name="description" id="description" value="<%= @cat.description %>"/><br />
-    <input type="submit" value="Create"/>
+    <input type="submit" value="Save"/>
 </form>

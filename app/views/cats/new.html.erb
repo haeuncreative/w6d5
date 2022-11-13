@@ -8,7 +8,7 @@
     <label for="birth_date">Birth Date:</label>
     <input type="date" name="birth_date" id="birth_date" value="<%= @cat.birth_date %>"><br>
     <label for="sex">Sex:
-    Male<input type="radio" id="sex" name="cat[sex]" value="<%= 'M' %>"/>
+    Male<input:required type="radio" id="sex" name="cat[sex]" value="<%= 'M' %>"/>
     Female<input type="radio" id="sex" name="cat[sex]" value="<%= 'F' %>"/></label><br/>
 
     <label for="color"> What color is this kitty? 
